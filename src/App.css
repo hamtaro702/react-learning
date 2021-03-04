@@ -1,38 +1,225 @@
-.App {
+*{
+  box-sizing: border-box;
+} 
+.table-responsive {
+  background-color: white;
+  border-radius: 1em;
+  
+}
+.table-responsive>.table-bordered {
+
+    color:dimgray;
+}
+
+body {
+  margin: 0;
+  background: #e9ebee;;
+  color:rgb(8, 8, 8);
+  background-image: url(img/backgroup_coke2.jpg);
+}
+
+.Navbar {
+  color: azure;
+  padding: 10px;
+  background:#4167b2;
+
+}
+
+.Input , .Post{
+  border: 1px solid hsl(216, 8%, 88%);
+  border-radius: 4px;
+  width: 100%;
+  margin: 20px auto;
+  background-color: #f5f2f2;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+}
+.Input__header{
+  background-color: #f5f6f7;
+  border-bottom: 1px solid #dddfe2;
+  border-radius: 2px 2px 0 0;
+  margin: 0;
+  padding: 15px;
+}
+.Input__field{
+
+  width: 200px;
+  font-size: 20px;
+
+}
+.Input__form{
+
+  border-radius: 2px 2px 0 0;
+  margin: 0;
+  padding: 12px;
+}
+.Input__field:focus{
+  outline: none;
+}
+
+.Post{
+  padding: 15px; 
+}
+.Post__image{
+  width: 100%;
+  margin-top: 40px;
+
+}
+.Post__Delete{
+  border: none;
+  background:none;
+  padding: 0;
+  float: right;
+  cursor: pointer;
+}
+
+.navbar{
+  background-color: crimson;
+
+}
+.Header__from{
+  text-align: center;
+
+}
+.form-group
+{
+  padding: 1rem;
+
+}
+
+.tableList{
+  text-align: center;
+  margin: 20px;
+}
+.Fields {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-around;
+}
+.Fields div {
+  margin-right: 10px;
+}
+@media (max-width: 350px) {
+  .Fields {
+     flex-direction: column-reverse;
+  }
+}
+
+
+
+
+
+
+.example-warper {
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 1px #cfcece dashed;
+  margin: auto;
+}
+
+.button {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #000000;
+  cursor: pointer;
+  padding: 0px 30px;
+  display: inline-block;
+  margin: 10px 15px;
+  text-transform: uppercase;
+  line-height: 2em;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  font-size: 14px;
+  border: 3px solid #cfcece;
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 15px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.button:hover,
+.button.hover {
+  border-color: #2980b9;
+}
+/*
+card 
+*/
+.card {
+  font-size: 12px;
+}
+.card > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 14px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+}
+.modal > .actions {
+  margin: auto;
+  position: inherit;
+  border-radius: 2px 2px 0 0;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+  position: inherit;
+}
+.modal > .close {
+  cursor: pointer;
+  position: inherit;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.example-warper-start {
+  width: 100%;
+  padding: 20px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px #cfcece dashed;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.menu {
+  width: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: #ffffff;
 }
-
-.App-link {
-  color: #61dafb;
+.menu-item {
+  cursor: pointer;
+  padding: 5px;
+  height: 28px;
+  border-top: 1px solid rgb(187, 187, 187);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-item:hover {
+  color: #2980b9;
 }
